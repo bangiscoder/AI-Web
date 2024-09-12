@@ -1,0 +1,194 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Color Palette */
+:root {
+    --primary-green: #2a9d8f;
+    --primary-yellow: #e9c46a;
+    --dark-bg: #264653;
+    --light-text: #f1faee;
+}
+
+/* Header Section */
+header {
+    position: relative;
+    background-image: url('images/hero-background.jpg'); /* Ensure your background image is correctly linked */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.name h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: var(--primary-yellow);
+}
+
+.name h2 {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+}
+
+.bio p {
+    font-size: 1.1rem;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Main Section */
+main {
+    width: 75vw;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+}
+
+/* Experience Section */
+.experience article {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Certificate Section */
+.certificate {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.certificate h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-green);
+}
+
+.certificate-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.certificate-container figure {
+    margin: 1rem;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.certificate-container figure:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Me Section */
+.contact {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h2, .contact p {
+    color: var(--primary-green);
+}
+
+.contact .social, .contact .contactForm {
+    display: inline-block;
+    width: 45%;
+    height: 350px;
+    overflow:hidden;
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+}
+
+iframe {
+    max-height: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .contact .social, .contact .contactForm {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer img {
+    margin-bottom: 1rem;
+    width: 250px;
+    height: 100px;
+}
+
+footer h2 {
+    color: var(--primary-yellow);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
